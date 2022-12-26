@@ -32,7 +32,10 @@ packages:
 执行 script task
 
 ```bash
-
+# umi4 为对应的 package name
+"dev": "lerna run dev --scope=umi4",
 ```
 
+## 构建
 
+可采用 father-build 用作构建工具

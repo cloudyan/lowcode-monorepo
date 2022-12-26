@@ -23,7 +23,7 @@ export class Editor extends (EventEmitter as any) implements IEditor {
    */
   @obx.shallow private context = new Map<KeyType, any>();
 
-  get<T = undefined, KeyOrType = any>(keyOrType: KeyOrType): GetReturnType<T, KeyOrType> | undefined {
+  get<T = undefined, KeyOrType = any>(keyOrType: KeyOrType): any {
     return this.context.get(keyOrType as any);
   }
 

@@ -1,4 +1,3 @@
-import { get as lodashGet } from 'lodash'
 
 export interface EngineOptions {
 

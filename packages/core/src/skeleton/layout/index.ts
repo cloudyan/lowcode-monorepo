@@ -1,10 +1,10 @@
 
 import { Component } from 'react'
-import { observer } from '../../utils/obx'
+import { observer } from '../../utils'
 import { Skeleton } from '../skeleton';
 
 @observer
-export class Workbench extends Component<{skeleton: Skeleton, editorConfig?: EditorConfig}> {
+export class Workbench extends Component<{skeleton: Skeleton, editorConfig?: any}> {
   constructor(props: any) {
     super(props)
   }

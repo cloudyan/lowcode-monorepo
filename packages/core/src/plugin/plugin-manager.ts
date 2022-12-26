@@ -1,8 +1,8 @@
-import { LowCodePluginContext } from './plugin-context'
-import { LowCodePlugin } from './plugin'
+import { PluginContext } from './plugin-context'
+import { Plugin } from './plugin'
 
 export class PluginManager {
-  private plugins: LowCodePlugin[] = [];
+  private plugins: Plugin[] = [];
   private pluginsMap = new Map();
   private editor;
 
@@ -10,9 +10,9 @@ export class PluginManager {
     this.editor = editor;
   }
 
-  private _getLowCodePluginContext(options: any) {
+  private _getPluginContext(options: any) {
     const pluginContext = this
-    return new LowCodePluginContext(pluginContext, options);
+    return new PluginContext(pluginContext, options);
   }
 
   async register(
@@ -22,7 +22,7 @@ export class PluginManager {
   ): Promise<void> {
 
     let { pluginName, meta = {} } = pluginConfigCreator as any;
-    const ctx = this._getLowCodePluginContext({ pluginName });
+    const ctx = this._getPluginContext({ pluginName });
     const config = pluginConfigCreator(ctx, options);
 
     pluginName = pluginName || config.name;
@@ -31,7 +31,7 @@ export class PluginManager {
       throw new Error(`Plugin with name ${pluginName} exists`)
     }
 
-    const plugin = new LowCodePlugin(pluginName, this, config, meta);
+    const plugin = new Plugin(pluginName, this, config, meta);
     await plugin.init();
 
     this.plugins.push(plugin)

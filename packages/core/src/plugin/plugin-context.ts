@@ -1,4 +1,4 @@
-export class LowCodePluginContext {
+export class PluginContext {
   project;
   skeleton;
   config;

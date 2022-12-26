@@ -1,4 +1,4 @@
-export class LowCodePlugin {
+export class Plugin {
   config;
   private manager;
   private pluginName;
