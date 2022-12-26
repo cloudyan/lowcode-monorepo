@@ -1,0 +1,16 @@
+{
+  "name": "@deepjs/lowcode-types",
+  "version": "0.0.1",
+  "description": "Types for Lowcode core",
+  "scripts": {},
+  "dependencies": {
+    "react": "^18.2.0",
+    "strict-event-emitter-types": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "@types/react": "^18.0.26",
+    "build-plugin-component": "^1.12.0",
+    "build-scripts": "^2.0.0"
+  }
+}
