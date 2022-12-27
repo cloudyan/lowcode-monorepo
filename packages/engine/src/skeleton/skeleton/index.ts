@@ -1,4 +1,4 @@
-import { makeObservable } from '../../utils/obx';
+import { makeObservable } from '../../utils';
 
 export class Skeleton {
   readonly editor;
@@ -11,7 +11,7 @@ export class Skeleton {
   readonly bottomArea;
 
   constructor(editor) {
-    makeObservable(this)
+    // makeObservable(this)
     this.editor = editor
   }
 

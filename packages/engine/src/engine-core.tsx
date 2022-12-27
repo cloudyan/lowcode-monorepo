@@ -1,4 +1,4 @@
-import { createElement } from 'react';
+import React, { createElement } from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 
 import { globalContext } from './utils/di';
@@ -62,7 +62,7 @@ export async function init(
   render(
     createElement(Workbench, {
       skeleton: innerSkeleton,
-      className: 'engine-main',
+      // className: 'engine-main',
     }),
     container,
   );

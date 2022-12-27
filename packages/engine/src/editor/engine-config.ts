@@ -15,7 +15,7 @@ export class EngineConfig {
   }
 
   get(key: string, defaultValue?:any): any {
-    return lodashGet(this.config, key, defaultValue)
+    // return lodashGet(this.config, key, defaultValue)
   }
 
   set(key: string, value: any) {
