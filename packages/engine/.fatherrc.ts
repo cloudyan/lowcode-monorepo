@@ -2,9 +2,12 @@ import { defineConfig } from 'father';
 
 //
 export default defineConfig({
-  esm: { output: 'es' },
-  cjs: { output: 'lib' },
-  umd: { output: 'dist' },
+  // esm: { output: 'es' },
+  // cjs: { output: 'lib' },
+  // umd: { output: 'dist' },
+  esm: {  },
+  cjs: {  },
+  umd: {  },
   // prebundle: {},
 });
 

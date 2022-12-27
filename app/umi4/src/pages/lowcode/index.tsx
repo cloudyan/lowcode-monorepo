@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import { project, plugins, config, common, skeleton, init } from '@alilc/lowcode-engine';
+import { init, getWorkbench } from '@deepjs/lowcode-engine'
 // import registerPlugins from './resource/plugin';
 import style from './index.less'
 // import './resource/global.scss'
@@ -19,7 +20,7 @@ import style from './index.less'
 //   ],
 // });
 
-const EditorView = () =>{
+const LowcodeEditor = () =>{
   /** 插件是否已初始化成功，因为必须要等插件初始化后才能渲染 Workbench */
   const [ready, setReady] = useState(false)
 
@@ -43,7 +44,7 @@ const EditorView = () =>{
   }
 
   // const Workbench = common.skeletonCabin.Workbench;
-  const Workbench = (props) => (<div>Workbench</div>)
+  const Workbench = getWorkbench()
 
 
   return <div className={style.lowcode_container}>
@@ -53,4 +54,4 @@ const EditorView = () =>{
   </div>
 }
 
-export default EditorView
+export default LowcodeEditor

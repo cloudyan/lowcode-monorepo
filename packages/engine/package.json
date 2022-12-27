@@ -1,11 +1,10 @@
 {
-  "name": "@deepjs/lowcode-core",
+  "name": "@deepjs/lowcode-engine",
   "version": "0.0.1",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
   "scripts": {
     "dev": "father dev",

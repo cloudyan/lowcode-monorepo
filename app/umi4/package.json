@@ -10,6 +10,8 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@deepjs/lowcode-engine": "workspace:*",
+    "@deepjs/lowcode-react-renderer": "workspace:*",
     "umi": "^4.0.40"
   },
   "devDependencies": {

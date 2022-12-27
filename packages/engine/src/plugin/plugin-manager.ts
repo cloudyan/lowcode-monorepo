@@ -23,15 +23,15 @@ export class PluginManager {
 
     let { pluginName, meta = {} } = pluginConfigCreator as any;
     const ctx = this._getPluginContext({ pluginName });
-    const config = pluginConfigCreator(ctx, options);
+    const pluginConfig = pluginConfigCreator(ctx, options);
 
-    pluginName = pluginName || config.name;
+    pluginName = pluginName || pluginConfig.name;
 
     if (this.pluginsMap.has(pluginName)) {
       throw new Error(`Plugin with name ${pluginName} exists`)
     }
 
-    const plugin = new Plugin(pluginName, this, config, meta);
+    const plugin = new Plugin(pluginName, this, pluginConfig, meta);
     await plugin.init();
 
     this.plugins.push(plugin)

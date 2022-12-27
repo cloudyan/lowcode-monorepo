@@ -1,5 +1,5 @@
-import { version } from './core';
-export * from './core';
+import { version } from './engine-core';
+export * from './engine-core';
 
 console.log(
   `%c LowcodeCore %c v${version} `,

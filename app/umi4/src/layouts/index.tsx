@@ -9,10 +9,10 @@ export default function Layout() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/docs">Docs</Link>
+          <Link to="/lowcode">lowcode</Link>
         </li>
         <li>
-          <a href="https://github.com/umijs/umi">Github</a>
+          <Link to="/preview">preview</Link>
         </li>
       </ul>
       <Outlet />

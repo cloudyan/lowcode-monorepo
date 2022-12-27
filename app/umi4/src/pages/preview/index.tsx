@@ -4,16 +4,9 @@ import React, { useState } from 'react';
 // import ReactRenderer from '@alilc/lowcode-react-renderer';
 // import { injectComponents } from '@alilc/lowcode-plugin-inject';
 
-const Loading = <div>loading...</div>
+import ReactRenderer from '@deepjs/lowcode-react-renderer'
 
-const ReactRendererSimple = (props) => {
-  return (<>
-    <div components={props.components} schema={props.schema}>
-      ReactRendererSimple
-    </div>
-  </>)
-}
-const ReactRenderer = ReactRendererSimple;
+const Loading = () => (<div>loading...</div>)
 
 const assetsLoader = () => {
   return {
@@ -22,7 +15,7 @@ const assetsLoader = () => {
   }
 }
 
-const SamplePreview = () => {
+const SamplePreview = (props) => {
   const [data, setData] = useState({});
 
   async function init() {
@@ -72,9 +65,11 @@ const SamplePreview = () => {
     <div className="lowcode-plugin-sample-preview">
       <ReactRenderer
         className="lowcode-plugin-sample-preview-content"
+        title="SamplePreview2"
         schema={schema}
         components={components}
       />
+      112
     </div>
   );
 };

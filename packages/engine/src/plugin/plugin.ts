@@ -1,19 +1,19 @@
 export class Plugin {
   config;
-  private manager;
+  private pluginManager;
   private pluginName;
   private meta;
   private _inited: boolean;
 
   constructor(
     pluginName: string,
-    manager: any,
+    pluginManager: any,
     config: any,
     meta: any,
   ) {
-    this.manager = manager;
-    this.config = config;
     this.pluginName = pluginName;
+    this.pluginManager = pluginManager;
+    this.config = config;
     this.meta = meta;
   }
 
@@ -46,6 +46,6 @@ export class Plugin {
   }
 
   async dispose() {
-    await this.manager.delete(this.name);
+    await this.pluginManager.delete(this.name);
   }
 }
