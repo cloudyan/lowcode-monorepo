@@ -12,7 +12,7 @@ export class Workbench extends Component<{skeleton: Skeleton, editorConfig?: any
     const { skeleton, className, topAreaItemClassName } = this.props;
     return (
       <>
-        <div>Workbench3</div>
+        <div>Workbench1</div>
       </>
     );
   }

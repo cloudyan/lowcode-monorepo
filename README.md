@@ -29,12 +29,16 @@ packages:
   - "packages/*"
 ```
 
-执行 script task
+执行 script task，可参考文档 [Run Tasks](https://lerna.js.org/docs/features/run-tasks)以及[示例库](https://github.com/lerna/getting-started-example)
 
 ```bash
 # umi4 为对应的 package name
 "dev": "lerna run dev --scope=umi4",
 ```
+
+构建依赖是自动识别的，无需 nx.json 就能完成自动构建依赖的管理
+
+NOTE: 无法启动一个 dev 命令，就能运行，是因为开发运行时，包的构建命令不会退出，所以就没有 umi4 构建的启动
 
 ## 构建
 

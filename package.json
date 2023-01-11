@@ -6,13 +6,14 @@
   "main": "",
   "scripts": {
     "clear": "rm -rf ./**/node_modules && rm -rf ./app/umi4/src/.umi",
-    "dev": "lerna run dev",
+    "dev": "lerna run dev --ignore umi4",
     "build": "lerna run build",
     "umi4": "lerna run dev --scope=umi4",
+    "graph": "nx graph",
     "test": ""
   },
   "devDependencies": {
-    "lerna": "^6.3.0"
+    "lerna": "^6.4.0"
   },
   "repository": {
     "type": "git",
