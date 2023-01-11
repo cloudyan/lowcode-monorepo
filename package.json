@@ -5,7 +5,9 @@
   "description": "",
   "main": "",
   "scripts": {
+    "clear": "rm -rf ./**/node_modules && rm -rf ./app/umi4/src/.umi",
     "dev": "lerna run dev",
+    "build": "lerna run build",
     "umi4": "lerna run dev --scope=umi4",
     "test": ""
   },

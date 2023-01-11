@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import { project, plugins, config, common, skeleton, init } from '@alilc/lowcode-engine';
-import { init, getWorkbench } from '@deepjs/lowcode-engine'
+import { init, getWorkbench } from '@deepjs/lowcode-core'
 // import registerPlugins from './resource/plugin';
 import style from './index.less'
 // import './resource/global.scss'

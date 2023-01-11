@@ -55,7 +55,7 @@ export async function init(
   ) {
   if (!container) {
     container = document.createElement('div')
-    container.id = 'lowcode-engine'
+    container.id = 'lowcode-container'
     document.body.appendChild(container)
   }
 

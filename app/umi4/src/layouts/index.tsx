@@ -9,6 +9,12 @@ export default function Layout() {
           <Link to="/">Home</Link>
         </li>
         <li>
+          <Link to="/mobx-only">mobx-only</Link>
+        </li>
+        <li>
+          <Link to="/mobx-react">mobx-react</Link>
+        </li>
+        <li>
           <Link to="/lowcode">lowcode</Link>
         </li>
         <li>

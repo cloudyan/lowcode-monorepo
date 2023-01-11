@@ -1,7 +1,7 @@
 {
   "name": "umi4",
   "private": true,
-  "author":"cloudyan <1395093509@qq.com>",
+  "author": "cloudyan <1395093509@qq.com>",
   "scripts": {
     "dev": "umi dev",
     "build": "umi build",
@@ -10,9 +10,11 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@deepjs/lowcode-engine": "workspace:*",
+    "@deepjs/lowcode-core": "workspace:*",
     "@deepjs/lowcode-react-renderer": "workspace:*",
-    "umi": "^4.0.40"
+    "mobx": "^6.7.0",
+    "mobx-react": "^7.6.0",
+    "umi": "^4.0.42"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

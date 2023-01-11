@@ -38,4 +38,18 @@ packages:
 
 ## 构建
 
-可采用 father-build 用作构建工具
+要求
+
+- 支持输出 ems, cjs, umd
+- 支持输出 sourceMap
+- 支持开发实时刷新
+- 支持文档，可用第三方，如 dumi
+
+要么自己定制，要么选第三方的构建库
+
+1. 采用 umijs `father` 作构建工具
+2. 使用 `"@alib/build-scripts": "^0.1.32"` 作为构建工具
+   1. `build-plugin-component@^1.0.0`
+   2. `build-plugin-fusion@^0.1.0`
+   3. `"@alifd/build-plugin-lowcode": "^0.3.0",`
+
