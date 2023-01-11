@@ -7,7 +7,7 @@ monorepo
 npx lerna init
 ```
 
-使用 pnpm
+[使用 pnpm](https://lerna.js.org/docs/recipes/using-pnpm-with-lerna)
 
 ``` js
 // 1. lerna.json 添加以下配置
