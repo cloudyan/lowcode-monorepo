@@ -10,9 +10,11 @@
     "build": "lerna run build",
     "umi4": "lerna run dev --scope=umi4",
     "graph": "nx graph",
+    "update": "pnpm up -r --workspace",
     "test": ""
   },
   "devDependencies": {
+    "father": "^4.1.3",
     "lerna": "^6.4.0"
   },
   "repository": {
