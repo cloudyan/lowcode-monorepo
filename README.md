@@ -53,3 +53,9 @@ packages:
    2. `build-plugin-fusion@^0.1.0`
    3. `"@alifd/build-plugin-lowcode": "^0.3.0",`
 
+## 开发
+
+开发实时预览，目前有两种方式
+
+1. 使用 alias 链接包源码调试
+2. 关闭 mfsu 开关，使用包实时构建模式（推荐）
