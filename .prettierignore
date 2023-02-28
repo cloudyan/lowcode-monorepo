@@ -1,0 +1,41 @@
+# 默认不格式化 node_modules
+node_modules
+
+*.min.css
+package.json
+
+# 其他类型文件
+**/*.jpg
+**/*.svg
+**/*.png
+**/*.toml
+*.lock
+
+.dockerignore
+.editorconfig
+.eslintcache
+.eslintignore
+.gitignore
+.prettierignore
+.history
+.DS_Store
+Dockerfile*
+LICENSE
+
+# log
+yarn-error.log
+
+# 测试和打包目录
+dist
+build
+public
+tests
+
+# umi
+.umi
+.umi-production
+.umi-test
+
+src/static
+src/assets
+*.min.*

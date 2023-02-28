@@ -1,0 +1,33 @@
+{
+  "name": "@lowcodejs/plugins",
+  "description": "",
+  "version": "0.0.3",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "doctor": "father doctor",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.20.13",
+    "@lowcodejs/canvas-panel": "workspace:*",
+    "@lowcodejs/components-panel": "workspace:*",
+    "@lowcodejs/setters-panel": "workspace:*"
+  },
+  "devDependencies": {
+    "father": "4.1.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
