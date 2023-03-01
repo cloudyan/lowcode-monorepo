@@ -45,13 +45,13 @@
 │   │           ├── material/         # 物料加载管理
 │   │           ├── setters/          # 设置器加载管理
 │   │           └── request/          # 请求数据及处理
-│   ├── react-renderer            # 渲染器
-│   ├── simulator-renderer        # 模拟器
 │   ├── components-panel          # 组件面板
 │   ├── setters-panel             # 设置器面板
 │   ├── canvas-panel              # 画布面板
-│   ├── setters                   # 内置设置器集合
+│   ├── react-renderer            # 画布 - 渲染器
+│   ├── simulator-renderer        # 画布 - 模拟器
 │   ├── components                # 内置组件集合
+│   ├── setters                   # 内置设置器集合
 │   └── plugins                   # 内置插件集合
 │       ├── index.tsx                 # 入口文件
 │       ├── plugin-logo               # logo 插件

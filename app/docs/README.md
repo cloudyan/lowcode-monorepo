@@ -10,3 +10,4 @@ theory 理论部分
 4. Mobx 状态管理
    1. [官方](https://mobx.js.org/react-integration.html)
    2. [mobx 中文文档](https://cn.mobx.js.org/)
+   3. [示例](https://github.com/cloudyan/learn-mobx)
