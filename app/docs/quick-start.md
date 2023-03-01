@@ -1,12 +1,5 @@
 # 快速开始
 
-## 前置知识
-
-1. ES6+, class, async, ES Modules
-2. React 基础
-3. TypeScript 类型系统
-4. Mobx 状态管理
-
 ## 环境准备
 
 1. node@16.16.0

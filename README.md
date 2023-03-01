@@ -35,20 +35,24 @@
 │   │   ├── package.json
 │   │   └── src
 │   │       ├── index.tsx         # 入口文件
-│   │       ├── assets/           # 资产加载管理
-│   │       │   └── material          # 物料加载
-│   │       ├── project/          # 文档模型
-│   │       ├── designer/         # 设计器核心
 │   │       ├── editor/           # 编辑器核心
 │   │       ├── plugins/          # 插件系统
 │   │       ├── skeleton/         # 骨架工作台
-│   │       └── utils/            # 工具方法
-│   ├── react-renderer              # 渲染器
-│   ├── simulator-renderer          # 模拟器
+│   │       ├── project/          # 文档模型
+│   │       ├── designer/         # 设计器核心
+│   │       ├── utils/            # 工具方法
+│   │       └── assets/           # 资产管理
+│   │           ├── material/         # 物料加载管理
+│   │           ├── setters/          # 设置器加载管理
+│   │           └── request/          # 请求数据及处理
+│   ├── react-renderer            # 渲染器
+│   ├── simulator-renderer        # 模拟器
 │   ├── components-panel          # 组件面板
 │   ├── setters-panel             # 设置器面板
 │   ├── canvas-panel              # 画布面板
-│   └── plugins                   # 插件库
+│   ├── setters                   # 内置设置器集合
+│   ├── components                # 内置组件集合
+│   └── plugins                   # 内置插件集合
 │       ├── index.tsx                 # 入口文件
 │       ├── plugin-logo               # logo 插件
 │       ├── plugin-components-panel   # 组件面板插件
