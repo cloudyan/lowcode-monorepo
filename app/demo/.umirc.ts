@@ -2,6 +2,7 @@ import { defineConfig } from 'umi';
 import { join, resolve } from 'path';
 
 export default defineConfig({
+  ssr: {},
   npmClient: 'pnpm',
   clickToComponent: {},
   mfsu: false,
