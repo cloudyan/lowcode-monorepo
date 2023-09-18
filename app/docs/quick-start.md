@@ -30,6 +30,10 @@ npm run lowcodeui
 # 多个项目
 npx lerna run build --scope=header,footer
 npx lerna run build --ignore=header,footer
+
+# 指定多个项目
+# "dev": "lerna run dev --scope=@example/master-umi4 --scope=@example/slave-umi4 ",
+
 # 支持 glob
 npx lerna run --scope package-1 --scope "*-2" lint
 npx lerna run --scope="package-{1,2,5}" test
